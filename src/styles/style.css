@@ -540,11 +540,6 @@ section {
   margin-bottom: 30px;
 }
 
-.cards .icon-box:hover {
-  /* transform: translateY(-5px); */
-  /* border-top: 3px solid #0d47a1; */
-}
-
 .cards .icon i {
   font-size: 48px;
   line-height: 1;
