@@ -2,14 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="../src/images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta name="description" content="Sumadhwa Consultants" />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +21,22 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Sumadhwa Consultants</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Main CSS File -->
+    <link href="style.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/0392a98d38.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../src/styles/bootstrap/js/bootstrap.bundle.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +51,68 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <script>
+      const select = (el, all = false) => {
+        el = el.trim();
+        if (all) {
+          return [...document.querySelectorAll(el)];
+        } else {
+          return document.querySelector(el);
+        }
+      };
+
+      const on = (type, el, listener, all = false) => {
+        let selectEl = select(el, all);
+        if (selectEl) {
+          if (all) {
+            selectEl.forEach((e) => e.addEventListener(type, listener));
+          } else {
+            selectEl.addEventListener(type, listener);
+          }
+        }
+      };
+      /**
+       * Mobile nav toggle
+       */
+      on("click", ".mobile-nav-toggle", function (e) {
+        select("#navbar").classList.toggle("navbar-mobile");
+        this.classList.toggle("bi-list");
+        this.classList.toggle("bi-x");
+      });
+
+      /**
+       * Mobile nav dropdowns activate
+       */
+      on(
+        "click",
+        ".navbar .dropdown > a",
+        function (e) {
+          if (select("#navbar").classList.contains("navbar-mobile")) {
+            e.preventDefault();
+            this.nextElementSibling.classList.toggle("dropdown-active");
+          }
+        },
+        true
+      );
+
+      // tally form
+      var d = document,
+        w = "https://tally.so/widgets/embed.js",
+        v = function () {
+          "undefined" != typeof Tally
+            ? Tally.loadEmbeds()
+            : d
+                .querySelectorAll("iframe[data-tally-src]:not([src])")
+                .forEach(function (e) {
+                  e.src = e.dataset.tallySrc;
+                });
+        };
+      if ("undefined" != typeof Tally) v();
+      else if (d.querySelector('script[src="' + w + '"]') == null) {
+        var s = d.createElement("script");
+        (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+      }
+    </script>
   </body>
 </html>
