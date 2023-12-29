@@ -1,5 +1,6 @@
 import Header from './Header';
 import '../styles/style.css';
+import Footer from './Footer';
 
 function ContactUs() {
   return (
@@ -18,7 +19,7 @@ function ContactUs() {
           <div className="col-lg-6 col-md-6 col-sm-12 d-flex align-items-stretch">
             <div className="info">
               <div className="address">
-                <i className="bi bi-geo-alt"></i>
+              <i class="fa-solid fa-location-dot"></i>
                 <h4>Location</h4>
                 <p>
                   #699 11th Cross, Padmanabhanagar <br />
@@ -27,7 +28,7 @@ function ContactUs() {
               </div>
 
               <div className="email">
-                <i className="bi bi-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
                 <h4>Email</h4>
                 <p>
                   nagarj.banaji2@gmail.com <br />
@@ -36,7 +37,7 @@ function ContactUs() {
               </div>
 
               <div className="phone">
-                <i className="bi bi-phone"></i>
+                <i className="fa-solid fa-phone"></i>
                 <h4>Phone</h4>
                 <p>
                   98801 01449 <br />
@@ -56,6 +57,7 @@ function ContactUs() {
                   width="100%"
                   height="276"
                   title="Contact form"
+                  
                 ></iframe>
                 
               </div>
@@ -64,7 +66,7 @@ function ContactUs() {
         </div>
       </div>
     </section>
-
+    <Footer></Footer>
     </div>
   );
 }

@@ -52,6 +52,7 @@
         }
       })(window.location);
     </script>
+    <script src="main.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -66,59 +67,16 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
     <script>
-      const select = (el, all = false) => {
-        el = el.trim();
-        if (all) {
-          return [...document.querySelectorAll(el)];
-        } else {
-          return document.querySelector(el);
-        }
-      };
-
-      const on = (type, el, listener, all = false) => {
-        let selectEl = select(el, all);
-        if (selectEl) {
-          if (all) {
-            selectEl.forEach((e) => e.addEventListener(type, listener));
-          } else {
-            selectEl.addEventListener(type, listener);
-          }
-        }
-      };
-      /**
-       * Mobile nav toggle
-       */
-      on("click", ".mobile-nav-toggle", function (e) {
-        select("#navbar").classList.toggle("navbar-mobile");
-        this.classList.toggle("bi-list");
-        this.classList.toggle("bi-x");
-      });
-
-      /**
-       * Mobile nav dropdowns activate
-       */
-      on(
-        "click",
-        ".navbar .dropdown > a",
-        function (e) {
-          if (select("#navbar").classList.contains("navbar-mobile")) {
-            e.preventDefault();
-            this.nextElementSibling.classList.toggle("dropdown-active");
-          }
-        },
-        true
-      );
-
-      // tally form
       var d = document,
         w = "https://tally.so/widgets/embed.js",
         v = function () {
           "undefined" != typeof Tally
             ? Tally.loadEmbeds()
             : d
-                .querySelectorAll("iframe[data-tally-src]:not([src])")
+                .querySelectorAll(
+                  "iframe[data-tally-src]:not([src])"
+                )
                 .forEach(function (e) {
                   e.src = e.dataset.tallySrc;
                 });
@@ -126,7 +84,10 @@
       if ("undefined" != typeof Tally) v();
       else if (d.querySelector('script[src="' + w + '"]') == null) {
         var s = d.createElement("script");
-        (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+        (s.src = w),
+          (s.onload = v),
+          (s.onerror = v),
+          d.body.appendChild(s);
       }
     </script>
   </body>

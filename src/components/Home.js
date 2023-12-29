@@ -16,7 +16,7 @@ function Home() {
                   Enabling manufacturing excellence through insightful consulting
                 </h1>
                 <h2>Preparing the patrons for the future...</h2>
-                <a href="#about" className="btn-get-started scrollto">Get Started</a>
+                <a href="#why-choose-us" className="btn-get-started scrollto">Get Started</a>
               </div>
             </div>
           </div>

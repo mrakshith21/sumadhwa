@@ -3,8 +3,49 @@ import { Link } from 'react-router-dom';
 import '../styles/style.css';
 
 function Header({active}) {
+  const select = (el, all = false) => {
+    el = el.trim()
+    if (all) {
+      return [...document.querySelectorAll(el)]
+    } else {
+      return document.querySelector(el)
+    }
+  }
 
-  console.log(active);
+  /**
+   * Easy event listener function
+   */
+  const on = (type, el, listener, all = false) => {
+    let selectEl = select(el, all)
+    if (selectEl) {
+      if (all) {
+        selectEl.forEach(e => e.addEventListener(type, listener))
+      } else {
+        selectEl.addEventListener(type, listener)
+      }
+    }
+  }
+
+  /**
+   * Mobile nav toggle
+   */
+  on('click', '.mobile-nav-toggle', function(e) {
+    console.log('Clicked');
+    select('#navbar').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+    console.log('Done');
+  })
+
+  /**
+   * Mobile nav dropdowns activate
+   */
+  // on('click', '.navbar .dropdown > a', function(e) {
+  //   if (select('#navbar').classList.contains('navbar-mobile')) {
+  //     e.preventDefault()
+  //     this.nextElementSibling.classList.toggle('dropdown-active')
+  //   }
+  // }, true)
 
   return (
     <header id="header" className="fixed-top d-flex align-items-center">

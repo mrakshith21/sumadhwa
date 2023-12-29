@@ -6,10 +6,10 @@ import Card from './Card';
 import HorizontalCard from './HorizontalCard';
 
 // images
-import dataDrivenImg from '../images/about/data-driven.png';
-import collaborationImg from '../images/about/collaboration.png';
-import peopleCentricImg from '../images/about/people-centric-ppt.png';
-import techPartnerImg from '../images/about/technology-partnership.jpg';
+import dataDrivenImg from '../images/about/data-driven-free.jpg';
+import collaborationImg from '../images/about/collaboration-free.jpg';
+import peopleCentricImg from '../images/about/people-centric-free.webp';
+import techPartnerImg from '../images/about/tech-partnership-free.jpg';
 
 function About() {
     return (
