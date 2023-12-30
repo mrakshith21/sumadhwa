@@ -31,7 +31,7 @@ function Solutions() {
 						<h3>Business Process Optimisation</h3>
 						<div className='solution-text'>
 							<ol>
-								<li className='subpoint'>
+								<li className='subpoint mt-4 mb-4'>
 									<h5>Process Optimisation and Efficiency Improvement</h5>
 									<ul>
 										<li>Streamlining production/assembly line processes for increased throughput</li>
@@ -39,7 +39,7 @@ function Solutions() {
 										<li>Introducing new and troubleshooting existing processes</li>
 									</ul>
 								</li>
-								<li className='subpoint'>
+								<li className='subpoint mb-4'>
 									<h5>Quality Management System</h5>
 									<ul>
 										<li>Designing and implementing robust quality control systems to ensure the production of high-quality components </li>
@@ -48,28 +48,28 @@ function Solutions() {
 									</ul>
 								</li>
 
-								<li className='subpoint'>
+								<li className='subpoint mb-4'>
 									<h5>Lean Manufacturing</h5>
 									<ul>
 										<li>Unlock operational efficiency by eliminating waste, reducing costs, and enhancing overall productivity through our Lean Manufacturing solutions.</li>
 									</ul>
 								</li>
 
-								<li className='subpoint'>
+								<li className='subpoint mb-4'>
 									<h5>Supply Chain Optimization</h5>
 									<ul>
 										<li>Transform your supply chain into a strategic asset, minimizing lead times, reducing costs, and improving overall logistics performance.</li>
 									</ul>
 								</li>
 
-								<li className='subpoint'>
+								<li className='subpoint mb-4'>
 									<h5>Cost Reduction Strategies</h5>
 									<ul>
 										<li>Identifying opportunities for cost reduction without compromising product quality & implementing optimum solutions</li>
 									</ul>
 								</li>
 
-								<li className='subpoint'>
+								<li className='subpoint mb-4'>
 									<h5>Six Sigma Implementation</h5>
 									<ul>
 										<li>Elevate the quality of your products and services with our Six Sigma methodologies, minimizing defects and maximizing customer satisfaction.</li>
@@ -82,14 +82,14 @@ function Solutions() {
 						<h3>Technological Solutions</h3>
 						<div className='solution-text'>
 							<ol>
-								<li className='subpoint'>
+								<li className='subpoint mt-4 mb-4'>
 									<h5>Advanced Manufacturing Technologies</h5>
 									<ul>
 										<li>Integrating Industry 4.0 technologies, such as IoT, Robotics, AGVs, AI, to automate and enhance manufacturing processes</li>
 										<li>Implementing smart manufacturing solutions for real-time monitoring and control</li>
 									</ul>
 								</li>
-								<li className='subpoint'>
+								<li className='subpoint mb-4'>
 									<h5>Continuous Improvement Programs</h5>
 									<ul>
 										<li>Instill continuous improvement programs to foster a culture of excellence within your organization</li>
@@ -104,14 +104,14 @@ function Solutions() {
 						<h3>Sustainability</h3>
 						<div className='solution-text'>
 							<ol>
-								<li className='subpoint'>
+								<li className='subpoint mt-4 mb-4'>
 									<h5>Sustainability and Environmental Compliance</h5>
 									<ul>
 										<li>Assisting in the development of eco-friendly manufacturing processes</li>
 										<li>Advising on compliance with environmental regulations and standards </li>
 									</ul>
 								</li>
-								<li className='subpoint'>
+								<li className='subpoint mb-4'>
 									<h5>Energy efficiency</h5>
 									<ul>
 										<li>Implement energy efficiency practices such as Energy audit , Energy management system</li>

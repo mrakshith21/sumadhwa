@@ -18,7 +18,7 @@ function About() {
             <div className="about">
                 <section id="who-we-are" className="who-we-are">
                     <div className="container bg-white">
-                        <h1 className="mb-4">Who we are</h1>
+                        <h1 className="mb-4 page-title">Who we are</h1>
                         <p>
                             Sumadhwa, drawing inspiration from Sanskrit's essence of dedication, embodies our ethos at Sumadhwa Consultants. As a united force, we're a team of seasoned professionals with over 25 years of collective experience in a leading automotive MNC, specializing across Manufacturing Process, Production, Maintenance, Quality, Automation, and EHS. Our proficiency extends to leveraging the latest IT advancements, strategically optimizing operational processes.
                         </p>
@@ -34,7 +34,7 @@ function About() {
                     </div>
                 </section>
 
-                <section id="guiding-lights" className="guiding-lights">
+                <section id="guiding-lights" className="section-bg">
                     <div className="container">
                         <div className="cards">
                             <div className="row center">
@@ -67,7 +67,7 @@ function About() {
                                                 description="
                                                 We are dedicated to excellence, intergrity and collaboration to ensure lasting relationships and drive success stories
                                                 "
-                                            ></Card>                                            
+                                            ></Card>
                                         </div>
                                     </div>
                                 </div>
@@ -76,42 +76,41 @@ function About() {
                     </div>
                 </section>
 
-                <section id="approach" className="approach">
-                    <div className='section-title'>
-                        <h2>Our Approach</h2>
+                <section id="approach">
+                    <div className='container'>
+                        <div className='section-title'>
+                            <h2>Our Approach</h2>
+                        </div>
+                        <HorizontalCard
+                            title="Data Driven Decision Making"
+                            imgSrc={dataDrivenImg}
+                            description="Our strategies are backed by thorough data analysis, enabling informed decision-making at every level of your organization.
+                    Our team turns complex information into easy-to-understand solutions, helping your business run smoother and make smart moves."
+                        >
+                        </HorizontalCard>
+
+                        <HorizontalCard
+                            title="Collaborative Consulting"
+                            imgSrc={collaborationImg}
+                            description="We work closely with your team to understand your unique challenges and opportunities, ensuring that our solutions are aligned with your business goals and bring resilience in an increasingly competitive global market."
+                        >
+                        </HorizontalCard>
+
+                        <HorizontalCard
+                            title="People Centric Solutions"
+                            imgSrc={peopleCentricImg}
+                            description="We believe in empowering your workforce. Our approach involves not just optimizing processes but also fostering a culture of continuous improvement among your teams and driving innovation and adaptability."
+                        >
+                        </HorizontalCard>
+
+                        <HorizontalCard
+                            title="Technological Partnership"
+                            imgSrc={techPartnerImg}
+                            description="From automation to data analytics, we leverage the latest advancements to enhance your operations and drive sustained success partnering with Technology Solution providers"
+                        >
+                        </HorizontalCard>
                     </div>
-                    <HorizontalCard
-                    title="Data Driven Decision Making"
-                    imgSrc={dataDrivenImg}
-                    description="Our strategies are backed by thorough data analysis, enabling informed decision-making at every level of your organization.
-                    Our team turns complex information into easy-to-understand solutions, helping your business run smoother and make smart moves.
-                    "
-                    >
-                    </HorizontalCard>
 
-                    <HorizontalCard
-                    title="Collaborative Consulting"
-                    imgSrc={collaborationImg}
-                    description="                            We work closely with your team to understand your unique challenges and opportunities, ensuring that our solutions are aligned with your business goals and bring resilience in an increasingly competitive global market.
-                    "
-                    >
-                    </HorizontalCard>
-
-                    <HorizontalCard
-                    title="People Centric Solutions"
-                    imgSrc={peopleCentricImg}
-                    description="We believe in empowering your workforce. Our approach involves not just optimizing processes but also fostering a culture of continuous improvement among your teams and driving innovation and adaptability.
-                    "
-                    >
-                    </HorizontalCard>
-
-                    <HorizontalCard
-                    title="Technological Partnership"
-                    imgSrc={techPartnerImg}
-                    description="From automation to data analytics, we leverage the latest advancements to enhance your operations and drive sustained success partnering with Technology Solution providers
-                    "
-                    >
-                    </HorizontalCard>
                 </section>
             </div>
             <Team></Team>

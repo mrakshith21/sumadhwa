@@ -4,7 +4,7 @@ import '../styles/style.css';
 function Team() {
     return (
         <div>
-            <section id="team" className="team">
+            <section id="team" className="team section-bg">
                 <div className="container">
                     <div className="section-title">
                         <h2>Our Team</h2>
